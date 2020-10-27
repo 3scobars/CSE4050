@@ -106,9 +106,15 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
-/*const init = function(e) {
-  window.document.location = "./cart.html";
-}
+var slimes = {
+  "name": "Rose Tea Scented Slime",
+  "price": 9.99,
+  "imageurl": "img/Rose_tea.jpeg",
+  "type": "premade"
+};
 
-document.addEventListener("DOMContentLoaded", function(){
-  init();});*/
+var stringifytxt = JSON.stringify(slimes);
+console.log(stringifytxt);
+
+var parsedtext = JSON.parse(stringifytxt);
+console.log(parsedtext);

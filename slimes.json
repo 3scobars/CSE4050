@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Rose Tea Scented Slime",
+    "price": 9.99,
+    "imageurl": "img/Rose_tea.jpeg",
+    "type": "premade"
+  },
+
+  {
+    "name": "Mocha Coffee Scented Slime Kit",
+    "price": 14.99,
+    "imageurl": "img/Mocha_coffee.jpeg",
+    "type": "premade"
+  },
+
+  {
+    "name": "Bubblegum Frappuccino",
+    "price": 9.99,
+    "imageurl": "img/bubblegum_frap.jpeg",
+    "type": "premade"
+  },
+
+  {
+    "name": "Kiwi Sorbet",
+    "price": 9.99,
+    "imageurl": "img/kiwi_sobert.jpeg",
+    "type": "premade"
+  },
+
+  {
+    "name": "Pink Dragonfruit Sparkles",
+    "price": 9.99,
+    "imageurl": "img/pink_dragon.jpeg",
+    "type": "premade"
+  }
+]
