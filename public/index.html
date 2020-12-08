@@ -8,6 +8,7 @@
     <meta name="keywords" content="sticky, scented, slimy, crunchy, colorful">
     <meta name="description":" content="We sell customizable and premade slime">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="Script.js" async></script>
     <title>AM Slimes</title>
   </head>
@@ -29,8 +30,65 @@
           <li><a href="About_US.html">About Us</a></li>
           <li><a href="Contact.html">Contact Us</a></li>
           <li><a href="Cart.html">Cart</a></li>
+          <li class="logged-in" style="display: none;">
+            <a href="#" class="modal-trigger" data-target="modal-account">Account</a>
+          </li>
+          <li class="logged-in" style="display: none;">
+            <a href="#" class="grey-text" id="logout">Logout</a>
+          </li>
+          <li class="logged-out" style="display: none;">
+            <a href="#" class="modal-trigger" data-target="modal-login">Login</a>
+          </li>
+          <li class="logged-out" style="display: none;">
+            <a href="#" class="modal-trigger" data-target="modal-signup">Sign up</a>
+          </li>
         </ul>
       </div>
+
+      <!-- SIGN UP MODAL -->
+        <div id="modal-signup" class="modal">
+          <div class="modal-content">
+            <h4>Sign up</h4><br />
+            <form id="signup-form">
+              <div class="input-field">
+                <input type="email" id="signup-email" required />
+                <label for="signup-email">Email address</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="signup-password" required />
+                <label for="signup-password">Choose password</label>
+              </div>
+              <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- LOGIN MODAL -->
+        <div id="modal-login" class="modal">
+          <div class="modal-content">
+            <h4>Login</h4><br />
+            <form id="login-form">
+              <div class="input-field">
+                <input type="email" id="login-email" required />
+                <label for="login-email">Email address</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="login-password" required />
+                <label for="login-password">Your password</label>
+              </div>
+              <button class="btn yellow darken-2 z-depth-0">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ACCOUNT MODAL -->
+        <div id="modal-account" class="modal">
+          <div class="modal-content center-align">
+            <h4>Account details</h4><br />
+            <div class="account-details"></div>
+          </div>
+        </div>
+
 
       <div class="Intro">
         <h2>Welcome to AM Slimes where you can buy Customizable & Pre-made Slime</h2>
@@ -38,59 +96,52 @@
 
       <div id="MostRecent">
         <h2>Pre-Made Slimes</h2>
-        <div class="Pre-Made">
-          <img class="shop-item-image" src="img/Rose_tea.jpeg" alt="Rose Tea Pre-Made Slime" width="35%">
-          <h3 class="shop-item-title">Rose Tea Scented Slime</h3>
-          <span class="price">$9.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-        <div class="Premade-type">
-          <img class="shop-item-image" src="img/Mocha_coffee.jpeg" alt="Mocha Coffee Scented Pre-Made Slime Kit" width="35%">
-          <h3 class="shop-item-title">Mocha Coffee Scented Slime Kit</h3>
-          <span class="price">$14.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-        <div class="Premade-type">
-          <img class="shop-item-image" src="img/bubblegum_frap.jpeg" alt="Bubblegum Frappuccino Pre-Made Slime" width="35%">
-          <h3 class="shop-item-title">Bubblegum Frappuccino</h3>
-          <span class="price">$9.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-        <div class="Premade-type">
-          <img class="shop-item-image" src="img/kiwi_sobert.jpeg" alt="Kiwi Sorbet Pre-Made Slime" width="35%">
-          <h3 class="shop-item-title">Kiwi Sorbet</h3>
-          <span class="price">$9.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-        <div class="Premade-type">
-          <img class="shop-item-image" src="img/pink_dragon.jpeg" alt="Pink Dragonfruit Sparkles Pre-Made Slime" width="35%">
-          <h3 class="shop-item-title">Pink Dragonfruit Sparkles</h3>
-          <span class="price">$9.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-      </div>
+            <ul class="collapsible z-depth-0 guides" style="border: none;">
 
-      <div id="About">
-        <h2>About Us</h2>
-        <p>We are a family owned business. We love making slime and we wanted everyone to experience the wonders of slime. <br>
-          I started out with buying and making my own homemade slime and now I just want to share my creations with the world.</p>
-      </div>
-
-      <div id="Contact">
-        <h2>Contact Us</h2>
-        <div class="Contact-Meathod">
-          <h3>Instagram</h3>
-          <p>You can Direct Message us for rates on our instagram <a href="https://www.instagram.com/amslimes3/?igshid=1gyro2fztb3ho" target="_blank">@amslimes3</a> as well as see some of our other premade slimes</p>
-        </div>
-        <div class="Contact-Meathod">
-          <h3>Tik Tok</h3>
-          <p>Follow us on Tik Tok for slime related videos on our Tik Tok page <a href="https://www.tiktok.com/@amslimes3?_d=secCgsIARCbDRgBIAIoARI%2BCjwbm1ao1ek1Ng1gImGUj%2Fj4fUV6OLac4tfKNZ4R3AcD5PN4cVViLX%2F6fFXf0Nyh8q38A7WmX%2FVKbz%2BGCmMaAA%3D%3D&language=en&sec_uid=MS4wLjABAAAAuIC5QyzuPJB55GJ7-b9c-MvhiZdbXzwLYh7KzNLRhwbIyrMTfIeGUn2M_1-ZQRd4&sec_user_id=MS4wLjABAAAAts7eYi85ieyDfWUuanq-TACWg3LUTd-Ee3HjnRKS71J3lO9azqzjy76ROC_zudAa&share_author_id=6823437223523353606&share_link_id=8079299D-59C6-4C79-8E57-DC626A5BB898&tt_from=copy&u_code=da14alk084l5ak&user_id=6772757189503730693&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m" target="_blank">@am_slimes</a></p>
-        </div>
+            </ul>
       </div>
 
       <a href="#Top">Back to the Top</a>
 
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDfjTRc6QeyIbZyC3UY9k9cKGhkaeKF6BE",
+    authDomain: "cse4050-25091.firebaseapp.com",
+    databaseURL: "https://cse4050-25091.firebaseio.com",
+    projectId: "cse4050-25091",
+    storageBucket: "cse4050-25091.appspot.com",
+    messagingSenderId: "959863647356",
+    appId: "1:959863647356:web:c3cd280ee012e7ff6d2df9",
+    measurementId: "G-BE6GQ6EQT7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  db.settings({ timestampsInSnapshots: true });
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
 
   </body>
 
